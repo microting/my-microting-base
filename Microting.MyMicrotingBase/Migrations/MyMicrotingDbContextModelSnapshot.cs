@@ -14,7 +14,7 @@ namespace Microting.MyMicrotingBase.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.6")
+                .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Microting.MyMicrotingBase.Infrastructure.Data.Entities.Organization", b =>
@@ -31,6 +31,9 @@ namespace Microting.MyMicrotingBase.Migrations
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
+
+                    b.Property<string>("CustomerNo")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("DomainName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -50,7 +53,16 @@ namespace Microting.MyMicrotingBase.Migrations
                     b.Property<int>("NumberOfLicensesUsed")
                         .HasColumnType("int");
 
+                    b.Property<bool>("PaymentOverdue")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("PaymentStatus")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("ServiceEmail")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Status")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("UpToDateStatus")
@@ -89,6 +101,9 @@ namespace Microting.MyMicrotingBase.Migrations
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
+                    b.Property<string>("CustomerNo")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("DomainName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -107,7 +122,16 @@ namespace Microting.MyMicrotingBase.Migrations
                     b.Property<int>("NumberOfLicensesUsed")
                         .HasColumnType("int");
 
+                    b.Property<bool>("PaymentOverdue")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("PaymentStatus")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("ServiceEmail")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Status")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("UpToDateStatus")
@@ -283,10 +307,6 @@ namespace Microting.MyMicrotingBase.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PermissionId");
-
-                    b.HasIndex("PluginGroupPermissionId");
-
                     b.ToTable("PluginGroupPermissionVersions");
                 });
 
@@ -331,21 +351,6 @@ namespace Microting.MyMicrotingBase.Migrations
                     b.HasOne("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginPermission", "Permission")
                         .WithMany()
                         .HasForeignKey("PermissionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginGroupPermissionVersion", b =>
-                {
-                    b.HasOne("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginPermission", "Permission")
-                        .WithMany()
-                        .HasForeignKey("PermissionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginGroupPermission", "PluginGroupPermission")
-                        .WithMany()
-                        .HasForeignKey("PluginGroupPermissionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

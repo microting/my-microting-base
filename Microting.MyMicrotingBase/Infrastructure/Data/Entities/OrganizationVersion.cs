@@ -14,5 +14,9 @@ namespace Microting.MyMicrotingBase.Infrastructure.Data.Entities
         public DateTime NextUpgrade { get; set; }
         public string InstanceStatus { get; set; }
         public int InstanceId { get; set; }
+        public string Status { get; set; }
+        public bool PaymentOverdue { get; set; }
+        public string PaymentStatus { get; set; }
+        public string CustomerNo { get; set; }
     }
 }

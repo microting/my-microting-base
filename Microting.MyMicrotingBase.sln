@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FB637703
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microting.MyMicrotingBase.UnitTests", "Microting.MyMicrotingBase.UnitTests\Microting.MyMicrotingBase.UnitTests.csproj", "{1C768558-219F-4CA8-AD8F-4E0D299B1783}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMigrator", "DBMigrator\DBMigrator.csproj", "{98530ABD-E03A-4B49-88FA-A18508A07984}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{1C768558-219F-4CA8-AD8F-4E0D299B1783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C768558-219F-4CA8-AD8F-4E0D299B1783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C768558-219F-4CA8-AD8F-4E0D299B1783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98530ABD-E03A-4B49-88FA-A18508A07984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98530ABD-E03A-4B49-88FA-A18508A07984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98530ABD-E03A-4B49-88FA-A18508A07984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98530ABD-E03A-4B49-88FA-A18508A07984}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

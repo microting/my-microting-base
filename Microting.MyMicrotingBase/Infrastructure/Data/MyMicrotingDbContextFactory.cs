@@ -13,6 +13,7 @@ namespace Microting.MyMicrotingBase.Infrastructure.Data
             optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs);
 
             return new MyMicrotingDbContext(optionsBuilder.Options);
+            // dotnet ef migrations add InitialCreate --project Microting.MyMicrotingBase --startup-project DBMigrator
         }
     }
 }
