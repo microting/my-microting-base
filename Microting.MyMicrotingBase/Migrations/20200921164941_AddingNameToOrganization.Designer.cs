@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microting.MyMicrotingBase.Infrastructure.Data;
 
 namespace Microting.MyMicrotingBase.Migrations
 {
     [DbContext(typeof(MyMicrotingDbContext))]
-    partial class MyMicrotingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200921164941_AddingNameToOrganization")]
+    partial class AddingNameToOrganization
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

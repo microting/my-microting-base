@@ -21,6 +21,6 @@ namespace Microting.MyMicrotingBase.Infrastructure.Data.Entities
         public bool PaymentOverdue { get; set; }
         public string PaymentStatus { get; set; }
         public string CustomerNo { get; set; }
-        
+        public string Name { get; set; }
     }
 }
