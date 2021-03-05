@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.0.85](https://github.com/microting/my-microting-base/tree/v1.0.85) (2021-03-05)
+
+[Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.84...v1.0.85)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.98 to 2.0.99 [\#25](https://github.com/microting/my-microting-base/issues/25)
+- Bump Microting.eForm from 4.4.2 to 4.4.3 [\#24](https://github.com/microting/my-microting-base/issues/24)
+
+**Merged pull requests:**
+
+- Bump Microsoft.NET.Test.Sdk from 16.7.1 to 16.9.1 [\#21](https://github.com/microting/my-microting-base/pull/21) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump nunit from 3.12.0 to 3.13.1 [\#15](https://github.com/microting/my-microting-base/pull/15) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [v1.0.84](https://github.com/microting/my-microting-base/tree/v1.0.84) (2021-02-24)
 
 [Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.83...v1.0.84)
