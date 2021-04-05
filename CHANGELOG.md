@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.93](https://github.com/microting/my-microting-base/tree/v1.0.93) (2021-04-05)
+
+[Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.92...v1.0.93)
+
 ## [v1.0.92](https://github.com/microting/my-microting-base/tree/v1.0.92) (2021-04-04)
 
 [Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.91...v1.0.92)
@@ -85,11 +89,14 @@
 
 - Bump Microting.eFormApi.BasePn from 2.0.97 to 2.0.98 [\#23](https://github.com/microting/my-microting-base/issues/23)
 - Bump Microting.eForm from 4.4.1 to 4.4.2 [\#22](https://github.com/microting/my-microting-base/issues/22)
-- Bump Microting.eFormApi.BasePn from 2.0.96 to 2.0.97 [\#20](https://github.com/microting/my-microting-base/issues/20)
 
 ## [v1.0.83](https://github.com/microting/my-microting-base/tree/v1.0.83) (2021-02-20)
 
 [Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.82...v1.0.83)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.96 to 2.0.97 [\#20](https://github.com/microting/my-microting-base/issues/20)
 
 ## [v1.0.82](https://github.com/microting/my-microting-base/tree/v1.0.82) (2021-02-20)
 
