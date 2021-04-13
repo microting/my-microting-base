@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.100](https://github.com/microting/my-microting-base/tree/v1.0.100) (2021-04-13)
+
+[Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.99...v1.0.100)
+
 ## [v1.0.99](https://github.com/microting/my-microting-base/tree/v1.0.99) (2021-04-12)
 
 [Full Changelog](https://github.com/microting/my-microting-base/compare/v1.0.98...v1.0.99)
