@@ -12,9 +12,10 @@ namespace Microting.MyMicrotingBase.Infrastructure.Data
         {
             var defaultCs = "Server = localhost; port = 3306; Database = mymicrotingbase; user = root; Convert Zero Datetime = true;";
             var optionsBuilder = new DbContextOptionsBuilder<MyMicrotingDbContext>();
-            optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs, mysqlOptions =>
+            optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs, new MariaDbServerVersion(
+                new Version(10, 4, 0)), mySqlOptionsAction: builder =>
             {
-                mysqlOptions.ServerVersion(new Version(10, 4, 0), ServerType.MariaDb).EnableRetryOnFailure();
+                builder.EnableRetryOnFailure();
             });
 
             return new MyMicrotingDbContext(optionsBuilder.Options);
